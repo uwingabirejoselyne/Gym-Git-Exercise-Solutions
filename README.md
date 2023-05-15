@@ -237,3 +237,271 @@ commit 00e4fad81f0a89725f5f5a3583798a05ec17b3c9 (origin/main, main)
 Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (dev)
 $ git reset --hard f0184163b2ccfc6a18560caff78abeb7e8ef1bd5
 '''
+
+# Git exercise
+# bundle 02
+# exercise 01
+
+'''
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (dev)
+$ git branch ft/bundle-2 
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (dev)
+$ git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ touch services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git commit -m 'some changes on services page'
+[ft/bundle-2 35a02c6] some changes on services page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git push -u origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 489 bytes | 97.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+'''
+
+# Git exercise
+# bundle 02
+# exercise 02
+
+'''
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git branch -d ft/service-redesign
+Deleted branch ft/service-redesign (was 00e4fad).
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git pull origin main
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.22 KiB | 21.00 KiB/s, done.
+From https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   00e4fad..19554e4  main       -> origin/main
+Updating 00e4fad..19554e4
+Fast-forward
+ README.md     | 239 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ about.html    |  12 +++
+ home.html     |  12 +++
+ services.html |  12 +++
+ 4 files changed, 275 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git add sercices.html
+fatal: pathspec 'sercices.html' did not match any files
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git commit -m 'Added paragraph'
+[ft/service-redesign a98242f] Added paragraph
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git push -u origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 588 bytes | 84.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git pull origin main
+remote: Enumerating objects: 1, done.
+Unpacking objects: 100% (1/1), 642 bytes | 8.00 KiB/s, done.
+
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+From https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   19554e4..25b8ca9  main       -> origin/main
+Updating 19554e4..25b8ca9
+Fast-forward
+ services.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git commit -m 'Added header'
+[main de0e16e] Added header
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 394 bytes | 131.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   25b8ca9..de0e16e  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git commit -m 'some Change'
+[ft/service-redesign 8d08239] some Change
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git push -u origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 460 bytes | 115.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   a98242f..8d08239  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git chechout ft/service-redesign
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git pull
+Already up to date.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git commit -m "Added new changes to service.html"
+[ft/service-redesign 8bc1ed1] Added new changes to service.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git push -u  origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 66.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   8d08239..8bc1ed1  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git  diff main..ft/service-redesign
+diff --git a/services.html b/services.html
+index 7dff09f..188414a 100644
+--- a/services.html
++++ b/services.html
+@@ -9,6 +9,6 @@
+ <body>
+     <h1> Service Page</h1>
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git diff --color-words main..ft/service-redesign
+diff --git a/services.html b/services.html
+index 7dff09f..188414a 100644
+--- a/services.html
++++ b/services.html
+@@ -9,6 +9,6 @@
+<body>
+    <h1> Service Page</h1>
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git merge ft/service-redesign
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main|MERGING)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main|MERGING)
+$ git commit -m 'solved conflicts'
+[main 752d047] solved conflicts
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git push -u origin main
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 225 bytes | 16.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   de0e16e..752d047  main -> main
+branch 'main' set up to track 'origin/main'.
+
+'''

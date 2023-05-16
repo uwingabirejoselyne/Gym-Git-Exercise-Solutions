@@ -2,7 +2,8 @@
 # bundle 01
 # exercise 01
 
-''' Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises
+```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises
 $ git init
 Initialized empty Git repository in D:/Ojemba_exercises/.git/
 
@@ -79,13 +80,13 @@ Switched to branch 'dev'
 Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (dev)
 $ git branch -d test
 Deleted branch test (was 00e4fad).
-'''
+```
 
 # Git exercise
 # bundle 01
 # exercise 02
 
-'''
+```bash
 Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (dev)
 $ touch home.html
 
@@ -236,9 +237,48 @@ commit 00e4fad81f0a89725f5f5a3583798a05ec17b3c9 (origin/main, main)
 
 Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (dev)
 $ git reset --hard f0184163b2ccfc6a18560caff78abeb7e8ef1bd5
-'''
+```
 
-#
+# Git exercise
+# bundle 02
+# exercise 01
 
+```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
 
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ touch services.html
 
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git add .
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git commit -m 'creation of services.html'
+[ft/bundle-2 1aae232] creation of services.html
+ 2 files changed, 13 insertions(+), 278 deletions(-)
+ rewrite services.html (70%)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git push -u origin t/bundle-2
+error: src refspec t/bundle-2 does not match any
+error: failed to push some refs to 'https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/bundle-2)
+$ git push -u origin ft/bundle-2
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 556 bytes | 185.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+```

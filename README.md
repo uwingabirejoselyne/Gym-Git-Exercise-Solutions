@@ -282,3 +282,84 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 ```
+# Git exercise
+# bundle 02
+# exercise 02
+
+```bash
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git commit -m 'changed'
+[main e100cc3] changed
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 453 bytes | 151.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   924743e..e100cc3  main -> main
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git diff main..ft/service-redesign
+diff --git a/services.html b/services.html
+index 8aa50a0..e96d5d2 100644
+--- a/services.html
++++ b/services.html
+@@ -10,6 +10,6 @@
+     <h1> Service Page</h1>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ipsa voluptatibus quia quidem perferendis vitae culpa dolorem officiis quam molestias modi nulla commodi i
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign|MERGING)
+$ git add services.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign|MERGING)
+$ git commit -m "Resolve conflicts between main and ft/service-redesign"
+[ft/service-redesign 5d7f58f] Resolve conflicts between main and ft/service-redesign
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git push -u ft/service-redesign
+fatal: 'ft/service-redesign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 253 bytes | 84.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   da8726c..5d7f58f  ft/service-redesign -> ft/service-redesign
+
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 253 bytes | 84.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   da8726c..5d7f58f  ft/service-redesign -> ft/service-redesign
+
+```

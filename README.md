@@ -550,9 +550,8 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # Git exercise
 # bundle 03
 # exercise 02
-
-
-
+```bash
+```
 
 
 
@@ -560,7 +559,8 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # bundle 04
 # exercise 01
 
-
+```bash
+```
 
 
 
@@ -570,3 +570,34 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # Git exercise
 # bundle 04
 # exercise 02
+```bash
+```
+
+
+
+# Git exercise
+# bundle 05
+# exercise 01
+```bash
+```
+
+
+# Git exercise
+# bundle 05
+# exercise 02
+```bash
+```
+
+
+# Git exercise
+# bundle 04
+# exercise 01
+```bash
+```
+
+
+# Git exercise
+# bundle 06
+# exercise 02
+```bash
+```

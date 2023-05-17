@@ -788,6 +788,7 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # bundle 05
 # exercise 01
 ```bash
+https://uwingabirejoselyne.github.io/Gym-Git-Exercise-Solutions/
 ```
 
 
@@ -795,7 +796,34 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # bundle 05
 # exercise 02
 ```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git clone https://github.com/uwingabirejoselyne/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+Receiving objects: 100% (107/107), 1.95 MiB | 596.00 KiB/s, done.eceiving objects:  96% (103/107), 1.89 MiB | 591.00 KiB/s
+Resolving deltas: 100% (5/5), done.
 
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (main)
+$ git add .
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (main)
+$ git commit -m 'forked data'
+[main 4873d22] forked data
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 322 bytes | 107.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
+   d1d3f9c..4873d22  main -> main
 ```
 
 

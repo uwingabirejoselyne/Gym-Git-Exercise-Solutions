@@ -633,6 +633,46 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # exercise 01
 
 ```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git remote add git-copy https://github.com/uwingabirejoselyne/The_Gym_exercise_solution_second_repo.git
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git add .
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git commit -m "Make changes on home page"
+[main 6e37816] Make changes on home page
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 462 bytes | 231.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   804f610..6e37816  main -> main
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git push git-copy main
+Enumerating objects: 71, done.
+Counting objects: 100% (71/71), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (69/69), done.
+Writing objects: 100% (71/71), 14.76 KiB | 472.00 KiB/s, done.
+Total 71 (delta 37), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (37/37), done.
+To https://github.com/uwingabirejoselyne/The_Gym_exercise_solution_second_repo.git
+ * [new branch]      main -> main
+
 ```
 
 

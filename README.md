@@ -363,3 +363,210 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
    da8726c..5d7f58f  ft/service-redesign -> ft/service-redesign
 
 ```
+# Git exercise
+# bundle 03
+# exercise 01
+
+```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/team-page)
+$ touch team.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/team-page)
+$ git add team.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/team-page)
+$ git commit -m 'team page'
+[ft/team-page a0468ee] team page
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 589 bytes | 28.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/contact-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/team-page)
+$ git log
+commit a0468ee09f79e15caaebc1b197d01c434f0b7684 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Joselyne Uwingabire <uwingajoselyne@gmail.com>
+Date:   Wed May 17 09:53:03 2023 +0200
+
+    team page
+
+commit afbfeb18904fc9e206bedb5ab65c27a2b88c67d5 (origin/main, main, ft/contact-page)
+Author: Joselyne Uwingabire <uwingajoselyne@gmail.com>
+Date:   Tue May 16 21:49:36 2023 +0200
+
+    Updated README
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/contact-page)
+$ git cherry-pick a0468ee09f79e15caaebc1b197d01c434f0b7684
+[ft/contact-page 06a87df] team page
+ Date: Wed May 17 09:53:03 2023 +0200
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/contact-page)
+$ touch contact.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/contact-page)
+$ git add contact.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/contact-page)
+$ git commit -m 'creation contact page'
+[ft/contact-page a84d8bc] creation contact page
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.02 KiB | 148.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ touch faq.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git add faq.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git commit -m 'creation of faq page'
+[ft/faq-page f7d03b9] creation of faq page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 478 bytes | 159.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git log
+commit f7d03b9667557c8cb3ca2c725cd4e5c494e107d8 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Joselyne Uwingabire <uwingajoselyne@gmail.com>
+Date:   Wed May 17 10:08:08 2023 +0200
+
+    creation of faq page
+
+commit a84d8bc3f20715c0051daa4f7cb7b218078719f0 (origin/ft/contact-page, ft/contact-page)
+Author: Joselyne Uwingabire <uwingajoselyne@gmail.com>
+Date:   Wed May 17 10:03:54 2023 +0200
+
+    creation contact page
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git revert f7d03b9667557c8cb3ca2c725cd4e5c494e107d8
+[ft/faq-page a4e0f82] Revert "creation of faq page"
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 faq.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git revert f7d03b9667557c8cb3ca2c725cd4e5c494e107d8
+On branch ft/faq-page
+nothing to commit, working tree clean
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git status
+On branch ft/faq-page
+nothing to commit, working tree clean
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 265 bytes | 66.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   f7d03b9..a4e0f82  ft/faq-page -> ft/faq-page
+```
+# Git exercise
+# bundle 03
+# exercise 02
+
+
+
+
+
+
+# Git exercise
+# bundle 04
+# exercise 01
+
+
+
+
+
+
+
+
+# Git exercise
+# bundle 04
+# exercise 02

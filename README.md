@@ -551,6 +551,79 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # bundle 03
 # exercise 02
 ```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git add .
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git commit -m 'Adding paragraph'
+[main 869d29a] Adding paragraph
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 582 bytes | 145.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+   83e2ace..869d29a  main -> main
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout ft/home-page-redesign branch
+error: pathspec 'branch' did not match any file(s) known to git
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/home-page-redesign)
+$ git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/home-page-redesign)
+$ git add .
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/home-page-redesign)
+$ git commit -m 'Adding footer'
+[ft/home-page-redesign ce8516f] Adding footer
+ 1 file changed, 3 insertions(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.73 KiB | 443.00 KiB/s, done.
+Total 13 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 ```
 
 
@@ -586,6 +659,7 @@ To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
 # bundle 05
 # exercise 02
 ```bash
+
 ```
 
 

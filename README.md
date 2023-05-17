@@ -684,6 +684,102 @@ To https://github.com/uwingabirejoselyne/The_Gym_exercise_solution_second_repo.g
 # bundle 04
 # exercise 02
 ```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ touch index.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ git commit -m 'index.html change'
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ git add index.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ git commit -m 'index.html change'
+[ft/footer d0371ce] index.html change
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ git add home.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ git commit -m 'home.html change'
+[ft/footer 771d9e2] home.html change
+ 1 file changed, 1 insertion(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 923 bytes | 230.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/squashing)
+$ git merge --squash ft/footer
+Updating d45951d..771d9e2
+Fast-forward
+Squash commit -- not updating HEAD
+ home.html  | 1 +
+ index.html | 1 +
+ 2 files changed, 2 insertions(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.html
+        modified:   index.html
+
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/squashing)
+$ git commit -m'footer changes squashing'
+[ft/squashing d4cf1db] footer changes squashing
+ 2 files changed, 2 insertions(+)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/Ojemba_exercises (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 695 bytes | 139.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/uwingabirejoselyne/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
 ```
 
 

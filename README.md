@@ -828,14 +828,63 @@ To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
 
 
 # Git exercise
-# bundle 04
+# bundle 06
 # exercise 01
 ```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (main)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (feature)
+$ touch menu.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (feature)
+$ git add menu.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (feature)
+$ git commit -m 'creation of menu page'
+[feature 4cf4815] creation of menu page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 menu.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 476 bytes | 79.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-3.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
 ```
 
 
 # Git exercise
 # bundle 06
 # exercise 02
+```bash
+```
+
+# Git exercise
+# bundle 06
+# exercise 03
+```bash
+```
+
+# Git exercise
+# bundle 06
+# exercise 04
 ```bash
 ```

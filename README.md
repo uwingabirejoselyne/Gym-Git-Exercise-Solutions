@@ -875,6 +875,39 @@ no changes added to commit (use "git add" and/or "git commit -a")
 # bundle 06
 # exercise 02
 ```bash
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (feature)
+$ git checkout main
+Switched to branch 'main'
+M       index-3.html
+Your branch is up to date with 'origin/main'.
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (main)
+$ git checkout -b bugfix
+Switched to a new branch 'bugfix'
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (bugfix)
+$ git add index-4.html
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (bugfix)
+$ git commit -m 'changing tittle'
+[bugfix 38a839d] changing tittle
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Joselyne@DESKTOP-7C7CM9M MINGW64 /d/git-cafe-exercise (bugfix)
+$ git push origin bugfix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 103.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bugfix' on GitHub by visiting:
+remote:      https://github.com/uwingabirejoselyne/git-cafe-exercise/pull/new/bugfix
+remote:
+To https://github.com/uwingabirejoselyne/git-cafe-exercise.git
+ * [new branch]      bugfix -> bugfix
 ```
 
 # Git exercise
